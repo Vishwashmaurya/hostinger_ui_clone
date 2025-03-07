@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostinger | Everything you need to create a website</title>
+    <link rel="shortcut icon" href="./asset/h logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .row1 {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            box-shadow: 2px 2px 2px rgb(233, 231, 231);
+
+
+
+        }
+
+        .btn:hover {
+            background-color: #ced8f6;
+        }
+
+        .r1c1 {
+            display: flex;
+            margin-top: 25px;
+            padding-left: 30px;
+            align-items: center;
+        }
+
+        .r1c2 {
+            display: flex;
+            gap: 35px;
+            width: 800px;
+            height: 100px;
+            /* margin-top: 25px; */
+            align-items: center;
+
+
+        }
+
+        .r1c2 div a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .btn {
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .row2 {
+            /* border: 1px solid red; */
+            padding: 20px 100px;
+            display: flex;
+            width: 1200;
+            justify-content: space-between;
+            margin-bottom: 70px;
+        }
+
+        .r2c1 {
+            width: 400px;
+            /* margin-right: 20px; */
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+
+        .r2c1 ul li {
+            list-style: none;
+            margin-left: -40px;
+            font-size: 17px;
+            padding: 2px 0px;
+        }
+
+        .r3r1 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 70px;
+        }
+
+        .r3r2 {
+            display: flex;
+            width: 700;
+            /* border: 1px solid red; */
+            gap: 130px;
+            justify-content: center;
+            height: 100px;
+            font-size: 20px;
+            margin-bottom: 100px;
+        }
+
+        .small {
+            font-size: 10px;
+        }
+
+        .fa-solid {
+            margin-right: 8px;
+        }
+
+        .r3r2 div p {
+            margin-bottom: -10px;
+        }
+
+        .color1 {
+            color: rgb(16, 16, 82);
+        }
+
+        .r4r2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+
+        }
+
+        .card {
+            margin: 10px;
+            padding: 35px;
+            box-shadow: 2px 2px 10px rgb(218, 215, 215);
+            border-radius: 10px;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .card-header button {
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px 30px;
+            border-color: blueviolet;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .card-body {
+            margin-left: -20px;
+
+
+        }
+
+        .card-body ul li {
+            margin-bottom: 10px;
+            text-decoration: dashed;
+        }
+
+        .card-footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .card-footer a {
+            text-decoration: none;
+        }
+
+        .brd {
+            border: 1px solid blueviolet;
+        }
+
+        /* .row5 {
+            border: 1px solid red;
+        } */
+
+        .r5r1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(47, 34, 94);
+            margin-bottom: 50px;
+        }
+
+        .r5r2 {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+        }
+
+        .btn5 {
+            background: #f0f2ff;
+            color: #2d1b69;
+            border: none;
+            padding: 15px 20px;
+            font-size: 14px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .btn5:hover {
+            background: #c3d4ff;
+        }
+
+        .fa-star {
+            color: #806cf1;
+        }
+
+        .color11 {
+            color: #2f1c6a;
+        }
+
+        .btn11:hover {
+            background-color: #d9d4fa;
+        }
+
+        .r14c1 ul li a {
+            text-decoration: none;
+            color: #301b6e;
+        }
+
+        .r14c1 ul li {
+            margin-bottom: 10px;
+        }
+
+        .r14c2 ul li a {
+            text-decoration: none;
+            color: #3a2776;
+        }
+
+        .r14c2 ul li {
+            margin-bottom: 10px;
+        }
+
+        .r14c3 ul li a {
+            text-decoration: none;
+            color: #3a2776;
+        }
+
+        .r14c3 ul li {
+            margin-bottom: 10px;
+        }
+
+        .r14c4 ul li a {
+            text-decoration: none;
+            color: #3a2776;
+        }
+
+        .r14c4 ul li {
+            margin-bottom: 10px;
+        }
+
+        .r14c5 ul li a {
+            text-decoration: none;
+            color: #3a2776;
+        }
+
+        .r14c5 ul li {
+            margin-bottom: 10px;
+        }
+
+        .r14c6 ul li a {
+            text-decoration: none;
+            color: #3a2776;
+        }
+
+        .r14c6 ul li {
+            margin-bottom: 10px;
+        }
+
+        .row14 {
+            color: #422598;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="r1c1">
+                <div>
+                    <img src="./asset/hostingerlogo.png" alt="" width="100" height="70">
+                </div>
+                <div>
+                    <p style="font-weight: bold; margin-left: 30px ;font-size: 20px;"><img src="./asset/India.avif"
+                            width="30" alt="" /> English</p>
+                </div>
+            </div>
+            <div class="r1c2">
+                <div>
+                    <a href="###">Horizon<span
+                        style="height: 5px; width: 5px; font-size: 11px; padding: 5px; background-color: rgb(238, 251, 238); color: rgb(42, 176, 42);font-weight: 600;">NEW</span></a>
+                </div>
+                <div>
+                    <a href="###">Wordpress <i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div>
+                    <a href="###">website builder</a>
+                </div>
+                <div>
+                    <a href="###">Hosting <i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div>
+                    <a href="###">Pro</a>
+                </div>
+                <div>
+                    <a href="###">Domain</a>
+                </div>
+                <div>
+                    <a href="###" class="btn">Log In</a>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="r2c1">
+                <h1 class="color1">Everything you need to create a website</h1>
+                <h2 class="color1">Up to <span style="color: blueviolet;">75%</span> off hosting + website builder</h2>
+                <ul>
+                    <li> <i class="fa-solid fa-check" style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free
+                        domain <i class="fa-solid fa-question"></i></li>
+                    <li> <i class="fa-solid fa-check" style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free
+                        website migration <i class="fa-solid fa-question"></i></li>
+                    <li> <i class="fa-solid fa-check" style="color: rgb(33, 166, 12);margin-right: 8px;"></i> 24/7
+                        customer support</li>
+                </ul>
+                <div>
+                    <p class="color1">₹ <span style="font-size: 30px; font-weight: bold;">149.00 </span>/mo</p>
+                    <h2 class="color1">+2 months free</h2>
+                    <button
+                        style="background-color: blueviolet ;color: azure;
+                    padding: 15px 50px; border-radius: 10px; margin-right: 10px ;border: none; font-weight: bold; font-size: 15px;">Start
+                        now</button>
+                    <button
+                        style="background-color: rgb(224, 207, 243) ; padding: 15px 50px; border-radius: 10px; border: none;font-size:15px ; font-weight: bold;">02:03:40:55</button>
+                    <p class="color1"> <i class="fa-solid fa-shield-halved"></i> 30-day money-back guarantee</p>
+                </div>
+            </div>
+            <div class="r2c2"><img src="./asset/r2c2.avif" width="600" height="500" alt=""></div>
+        </div>
+        <div class="row3">
+            <div class="r3r1">
+                <p> <i class="fa-brands fa-wordpress-simple"></i> Recommended by <span
+                        style="font-weight: bold;">WordPress.org</span></p>
+            </div>
+            <div class="r3r2">
+                <div class="r3r2c1">
+                    <p><i class="fa-solid fa-star" style="color: rgb(61, 177, 61);"></i> Trustpilot</p>
+                    <p><i class="fa-solid fa-star" style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i></p>
+                    <p class="small">TrustScore <b>4.7 41,081</b> reviews</p>
+                </div>
+                <div class="r3r2c2">
+                    <p> <b>Google</b></p>
+                    <p><i class="fa-solid fa-star" style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i></p>
+                    <p class="small">Rating :<b>4.7 41,081</b> reviews</p>
+                </div>
+                <div class="r3r2c3">
+                    <p><b>Host</b>advice</p>
+                    <p><i class="fa-solid fa-star" style="color: rgb(61, 177, 61); "></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i></p>
+                    <p class="small">Rating :<b>4.7 41,081</b> reviews</p>
+                </div>
+                <div class="r3r2c4">
+                    <p> <b>wpbeginner</b></p>
+                    <p><i class="fa-solid fa-star" style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i><i class="fa-solid fa-star"
+                            style="color: rgb(61, 177, 61);"></i></p>
+                    <p class="<h1>Your online success starts here</h1>
+            <p>Choose from a wide variety of products and services to grow your idea online.</p>small">Rating :<b>4.7
+                            41,081</b> reviews</p>
+                </div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="r4r1">
+                <h1 style="text-align: center; font-size: 36px; color: rgb(16, 16, 82);">Pick your perfect plan</h1>
+                <p style="text-align: center; margin-top: 32px; color: rgb(16, 16, 82);">Get started in complete
+                    confidence. Our 30-day money-back guarantee means it's risk-free.</p>
+            </div>
+            <div class="r4r2">
+                <div class="r4r2c1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Single</h1>
+                            <p>A great solution for beginners</p>
+                            <p><span> <strike>₹ 399.00</strike>SAVE 83%</span></p>
+                            <p class="color1">₹ <span style="font-size: 30px; font-weight: bold;">69.00 </span>/mo</p>
+                            <button>Choose plan</button>
+                        </div>
+                        <div class="card-body color1">
+                            <ul style="list-style: none;">
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 1 website</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Managed Hosting for
+                                    WordPress</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 50 GB SSD storage</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Hostinger Website
+                                    Builder</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free domain
+                                    (₹749.00 value)</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free automatic website
+                                    migration</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i>1 email account</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Unlimited free SSL</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Weekly backups</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free CDN</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>WooCommerce
+                                </li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Dedicated IP
+                                    address</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Priority
+                                    support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="###">See all feature <i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r4r2c3" style="margin-top: -20px;">
+                    <p style="text-align: center; background-color: blueviolet; margin-top: -5px; padding: 8px; font-weight: bold; width: 90%;border-radius: 10px; padding-bottom: 20px;
+                    margin-left: 10px;">Most popular</p>
+                    <div class="card brd" style="margin-top: -30px;">
+
+                        <div class="card-header">
+                            <h1>Single</h1>
+                            <p>A great solution for beginners</p>
+                            <p><span> <strike>₹ 399.00</strike>SAVE 83%</span></p>
+                            <p class="color1">₹ <span style="font-size: 30px; font-weight: bold;">69.00 </span>/mo</p>
+                            <button style="color: azure; background-color: blueviolet;">Choose plan</button>
+                        </div>
+                        <div class="card-body color1">
+                            <ul style="list-style: none;">
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 1 website</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Managed Hosting for
+                                    WordPress</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 50 GB SSD storage</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Hostinger Website
+                                    Builder</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free domain
+                                    (₹749.00 value)</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free automatic website
+                                    migration</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i>1 email account</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Unlimited free SSL</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Weekly backups</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free CDN</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>WooCommerce
+                                </li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Dedicated IP
+                                    address</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Priority
+                                    support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="###">See all feature <i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r4r2c2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Single</h1>
+                            <p>A great solution for beginners</p>
+                            <p><span> <strike>₹ 399.00</strike>SAVE 83%</span></p>
+                            <p class="color1">₹ <span style="font-size: 30px; font-weight: bold;">69.00 </span>/mo</p>
+                            <button>Choose plan</button>
+                        </div>
+                        <div class="card-body color1">
+                            <ul style="list-style: none;">
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 1 website</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Managed Hosting for
+                                    WordPress</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 50 GB SSD storage</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Hostinger Website
+                                    Builder</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free domain
+                                    (₹749.00 value)</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free automatic website
+                                    migration</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i>1 email account</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Unlimited free SSL</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Weekly backups</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free CDN</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>WooCommerce
+                                </li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Dedicated IP
+                                    address</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Priority
+                                    support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="###">See all feature <i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r4r2c4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Single</h1>
+                            <p>A great solution for beginners</p>
+                            <p><span> <strike>₹ 399.00</strike>SAVE 83%</span></p>
+                            <p class="color1">₹ <span style="font-size: 30px; font-weight: bold;">69.00 </span>/mo</p>
+                            <button>Choose plan</button>
+                        </div>
+                        <div class="card-body color1">
+                            <ul style="list-style: none;">
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 1 website</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Managed Hosting for
+                                    WordPress</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> 50 GB SSD storage</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Hostinger Website
+                                    Builder</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free domain
+                                    (₹749.00 value)</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Free automatic website
+                                    migration</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i>1 email account</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Unlimited free SSL</li>
+                                <li><i class="fa-solid fa-check"
+                                        style="color: rgb(33, 166, 12); margin-right: 8px;"></i> Weekly backups</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Free CDN</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>WooCommerce
+                                </li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Dedicated IP
+                                    address</li>
+                                <li><span style="color: rgb(101, 104, 100); margin-right: 15px;">--</span>Priority
+                                    support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="###">See all feature <i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; color: rgb(155, 75, 230); font-weight: bold;">Payment terms</p>
+
+        <div class="row5">
+            <div class="r5r1">
+                <h1>Your online success starts here</h1>
+                <p>Choose from a wide variety of products and services to grow your idea online.</p>
+            </div>
+            <div class="r5r2">
+                <button class="btn5">Recommended</button>
+                <button class="btn5">Create a website</button>
+                <button class="btn5">Hosting</button>
+                <button class="btn5">domain & email</button>
+            </div>
+            <div class="r5r3" style="width: 70%; margin: 50px;
+            box-sizing: content-box; opacity: 1px;">
+                <img src="./asset/ss.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="row6" style="display: flex; gap: 20%; border: 1px solid black; width: 95%; margin-left: auto; margin-right: auto;">
+            <div class="r6c1" style="display: flex; margin: 5%;">
+                <div class="r6c1c1">
+                
+                    <button style="background-color: rgb(198, 198, 243); border-radius: 20px; border: none;
+                    margin-left: 100px; width: 200px;">NO CODING SKILLS NEEDED</button>
+                    <!-- <img src="./asset/r6c2.avif" style="height: 300px; width: 350px;" alt="">
+               
+            </div>
+            <div class="r6c2c2" style="width: 50%;">
+                <img src="./asset/r6c2.avif" style="height: 300px; width: 350px;" alt="">
+            </div>
+
+            </div>
+            <div class="r6c2">
+
+            </div>
+        </div> -->
+        <div class="row6"
+            style="display: flex; width: 80%;height: 400px; padding: 20px; margin-left: auto; margin-right: auto;">
+            <div class="r6c1"
+                style="border: 1px solid black; border-radius: 15px; display: flex; width: 60%; padding: 5%; background: rgb(244, 250, 252); border: none;">
+                <div class="r6c1c1">
+                    <button style="border-radius: 10px; border: none; padding: 8px; background: #d5e8f3;">NO CODING
+                        SKILLS NEEDED</button>
+                    <br>
+                    <br>
+                    <h1>Build a website with AI</h1>
+                    <p>Create your dream website in 3 simple steps with Hostinger Website Builder. Start a blog, launch
+                        an online store, showcase your portfolio, and more.</p>
+                    <a href="##" style="text-decoration: none;">Go live in minutes <i
+                            class="fa-solid fa-angle-right"></i> </a>
+
+                </div>
+                <div class="r6c1c2">
+                    <img src="./asset/r6c2.avif" alt="" width="300px">
+
+                </div>
+            </div>
+            <div class="r6c2"
+                style=" margin-left: 20px;width: 25%; border-radius: 20px; background: rgb(173, 170, 242); padding: 40px; ">
+                <i class="fa-solid fa-earth-americas"
+                    style="border-radius: 5px; height: 20px; width: 20px; padding: 10px; background-color: #9989f4; color: white;"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 200px; color: white;"></i>
+                <p style=" font-weight: bold; font-size: 25px;">Find a domain that will <br> help your business <br>
+                    stand out</p>
+                <img src="./asset/r6c3.avif" alt=""
+                    style=" width: 380px; height: 124px; margin-top: 45px; margin-left: -40px ; border-end-start-radius: 20px;">
+
+            </div>
+
+        </div>
+
+        <div class="row7" style=" background-color:#1f1346 ">
+            <div class="r7r1" style="margin-top: 24px; margin-bottom: 32px;text-align: center; padding-left: 40px;
+        padding-right: 40px; margin-bottom: 20px; margin-top: 40px;">
+                <h1 style="color: white; padding-top: 50px; font-size: 38px;">Website migration. Made simple.</h1>
+                <p style="color: white; text-align: center;padding-right: 140px; padding-left: 140px; font-size: 15px;">
+                    Currently hosting your website elsewhere? Join the 3+ million website owners who enjoy fast, secure
+                    and reliable web hosting here at Hostinger. Our expert team will handle everything while your site
+                    stays up and running throughout. That’s right – no downtime. No data loss. No problem.</p>
+            </div>
+            <div class="r7r2" style="display: flex;margin-left: 150px; margin-right: 150px; padding: 40px;">
+                <div class="r7r2c1"
+                    style=" margin-right: 30px; padding: 30px; background-color: #2f1c6a; border-radius: 20px;">
+                    <i class="fa-solid fa-list"
+                        style="align-items: center; border-radius: 6px;display: flex;height:40px;justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">3 simple steps</h2>
+                    <p style="color: white;">Simply pick your plan, fill in the migration request form, submit it and
+                        then sit back and relax.
+                    </p>
+                </div>
+                <div class="r7r2c2"
+                    style=" margin-right: 30px; padding: 30px; width: 650px; background-color: #2f1c6a; border-radius: 20px;">
+                    <i class="fa-solid fa-bolt"
+                        style="align-items: center; border-radius: 6px;display: flex;height:40px; justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">Fast and secure</h2>
+                    <p style="color: white;">95% of websites are migrated in under 20 minutes. The other 5% are quicker
+                        than the industry
+                        average. And, your site stays live the whole time too.</p>
+                </div>
+                <div class="r7r2c3" style=" padding: 30px; background-color: #2f1c6a; border-radius: 20px;">
+
+                    <i class="fa-solid fa-circle-check"
+                        style="align-items: center; border-radius: 6px;display: flex; height:40px; justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">Free</h2>
+                    <p style="color: white;">Whether you have 1 website to migrate or 100, migration is free with all of
+                        our plans.</p>
+                </div>
+            </div>
+            <div class="r7r3" style="display: flex; justify-content: center;">
+                <button
+                    style="border: none; border-radius: 8px; background: rgb(219, 58, 112); height: 45px;
+                width: 190px; font-size: 20px; color: white; margin-left: auto; margin-right: auto; margin-bottom: 80px;">Get
+                    started</button>
+            </div>
+
+        </div>
+
+        <div class="row8" style="margin-top: 80px; margin-left: 200px; display: flex; margin-bottom: 90px;">
+            <div class="r8c1" style="background-image: url(./asset/man.avif); height: 500px; width: 850px; background-size: cover;
+            border-radius: 20px; margin-right: 50px;">
+                <p style="text-align: center; width: 100%; ">
+                    <i class="fa-solid fa-play"
+                        style="font-size: 30px; color: rgb(255, 255, 255); margin-top: 230px; border-radius: 50%; padding: 30px; background-color: rgba(255, 239, 239, 0.15);"></i>
+                </p>
+            </div>
+            <div class="r8c2" style="margin-top: 100px;margin-right: 150px;">
+                <i class="fa-solid fa-quote-left"
+                    style="font-size: 40px; color: #9989f4; background-color: #eeebfa; padding: 5px; border-radius: 5px;"></i>
+                <p style=" font-size: 30px; margin-bottom: 30px;">Building our website with Hostinger Website Builder
+                    was <span style="color: #806cf1;">user-friendly</span> and as easy as getting ready to play cricket.
+                </p>
+                <hr>
+                <div style="display: flex;">
+                    <div style="font-size: 16px;">
+                        <h3>Renuka Prasad</h3>
+                        <p>lithuaniacricket.com</p>
+                    </div>
+                    <div class="r8c2r2" style="width: 100%; text-align: right;">
+                        <i class="fa-solid fa-angle-left"
+                            style="border-radius: 50%; background-color: #e9e7f8; padding: 20px;"></i>
+                        <i class="fa-solid fa-angle-right" style="border-radius: 50%; background-color: #e9e7f8; padding: 20px;
+                            "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row9" style="display: flex;">
+            <div class="r9c1">
+                <img src="./asset/hostinger-image.avif" alt=""
+                    style="height: 660px;width: 835px; display: block; background-color: #806cf1;">
+            </div>
+            <div class="r9c2" style="padding: 100px; margin-top: 80px;">
+                <span style="border-radius: 20px; background-color: #c3d4ff;font-weight: 500;font-size: 15px; padding: 5px;
+                ">EASY TO USE DASHBOARD</span>
+                <h1 style="font-size: 35px; margin-bottom: 30px;">See everything. <br>
+                    Control everything.</h1>
+                <p style="font-weight: 350;font-size: 16px;">
+                    Keep an eye on everything that’s important to you, with our easy to use dashboard. <br> Designed to
+                    be easy-to-use for beginners and professionals alike, you can see at a glance how your site is
+                    performing and make adjustments,among other things.
+                </p>
+            </div>
+        </div>
+        <div class="row10" style=" background-color:#1f1346 ; height:1300px ;">
+            <div class="r10r1" style="color: white;text-align: center;padding: 45px; font-size: 17px; ">
+                <h1>Speed. Reliability. Efficiency.</h1>
+                <p>Enjoy top-notch performance you can rely on and give your website visitors a smooth experience.</p>
+            </div>
+            <div class="r10r2" style="display: flex;margin-left: 150px; margin-right: 150px; padding: 40px;">
+                <div class="r10r2c1"
+                    style=" margin-right: 30px; padding: 20px; background-color: #2f1c6a; border-radius: 20px; width: 870px;">
+                    <i class="fa-solid fa-globe"
+                        style="align-items: center; border-radius: 6px;display: flex;height:40px;justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">Local data centers. <br>
+                        Around the world.</h2>
+                    <p style="color: white;">Wherever you are in the world, your site will automatically connect to the
+                        closest data center in our global network. Extra efficiency at no extra cost.</p>
+                </div>
+                <div class="r10r2c2"
+                    style=" margin-right: 30px; padding: 30px; width:870px; background-color: #2f1c6a; border-radius: 20px;">
+                    <i class="fa-solid fa-chart-simple"
+                        style="align-items: center; border-radius: 6px;display: flex;height:40px;justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">Full speed ahead. <br>
+                        Whatever the traffic.</h2>
+                    <p style="color: white;">Benefit from lower response times and rapid page-loading speeds, no matter
+                        how high your site traffic spikes.</p>
+                </div>
+                <div class="r10r2c3"
+                    style=" padding: 30px; background-color: #2f1c6a; border-radius: 20px; width: 800px;">
+                    <i class="fa-solid fa-arrows-rotate"
+                        style="align-items: center; border-radius: 6px;display: flex;height:40px;justify-content: center; width: 40px; background-color: #6a54e7; color: white;"></i>
+                    <h2 style="color: white;">Live and kicking. <br>
+                        24/7.</h2>
+                    <p style="color: white;">Day and night your site is working hard. Our 99.9% uptime guarantee means
+                        your website is always available.</p>
+                </div>
+            </div>
+            <div class="r10r3" style="display: flex;">
+                <div class="r10r3c1">
+                    <img src="./asset/row10.avif" alt=""
+                        style="height: 500px; width: 560px; padding: 190px; margin-top: -70px;">
+                </div>
+                <div class="r10r3c2" style="margin-top: 140px; margin-left: -80px; text-align: left;">
+                    <h1 style="color: white; font-size: 40px;">Total security. Complete confidence.</h1>
+                    <ul style="list-style: none;color: white; margin-right: 120px;">
+                        <li><i class="fa-solid fa-check" style="color: white;margin-right: 10px;"></i>Secure your files
+                            with regular automatic backups and two-factor authentication</li>
+                        <li><i class="fa-solid fa-check" style="color: white; margin-right: 10px;"></i>Encrypt your
+                            website traffic with unlimited SSL security certificates</li>
+                        <li><i class="fa-solid fa-check" style="color: white;margin-right: 10px;"></i>Enjoy full
+                            protection from DDoS attacks with Cloudflare protected nameservers</li>
+                    </ul>
+                    <button
+                        style="border: none; border-radius: 8px; background: rgb(219, 58, 112); height: 45px;
+                width: 190px; font-size: 20px; color: white; margin-left: auto; margin-right: auto; margin-bottom: 80px;">Get
+                        started</button>
+                </div>
+            </div>
+        </div>
+        <div class="row11" style="margin-top: 80px;">
+            <div class="r11r1" style="text-align: center; font-size: 18px;">
+                <h1>Trusted by 3+ million website owners worldwide</h1>
+            </div>
+            <div class="r11r2" style="display:flex ;padding-left: 200px; padding-right: 200px; padding-top: 20px;">
+                <div class="r11r2c1"
+                    style="border: 1px solid rgb(157, 171, 233); height: 370px; width: 300px; padding: 30px; border-radius: 20px;margin-right: 30px;">
+                    <div class="header" style="display: flex;">
+                        <div><img src="./asset/r11-header.avif" alt="" style="height: 70px; width: 70px;"></div>
+                        <div style="margin-top: -30px; margin-left: 20px;font-size: 17px;">
+                            <h4>Shreyash Pandey</h4>
+                            <p style="margin-top: -8px;">Founder of Ethereal Corporate Network</p>
+                        </div>
+                    </div>
+                    <div class="body" style="margin-top: 50px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="color11">
+                            Unlike the previous web hosts we’ve tried, Hostinger’s user experience was much less
+                            complicated. Its hPanel is easy to use, and the response time is fast. I don’t need to train
+                            my team members on how to navigate it because everyone can learn it by themselves.
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <a href="####" style="text-decoration: none; font-weight: 500; color: #6a54e7;">Read the full
+                            story</a>
+                    </div>
+                </div>
+                <div class="r11r2c2"
+                    style="border: 1px solid rgb(157, 171, 233); height: 370px; width: 300px; padding: 30px; border-radius: 20px; margin-right: 30px;">
+                    <div class="header" style="display: flex;">
+                        <div><img src="./asset/r11r2c2.avif" alt="" style="height: 70px; width: 70px;"></div>
+                        <div style="margin-top: -25px; margin-left: 20px; font-size: 17px;">
+                            <h4 style="margin-bottom: -8px;">Pranay Jain</h4>
+                            <p>Co-founder of Brandemic</p>
+                        </div>
+                    </div>
+                    <div class="body" style="margin-top: 67px; margin-bottom: 58px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="color11">
+                            I found out about Hostinger through an ad, and it’s been great since the first experience.
+                            I’ve now hosted over 150 websites on Hostinger and joined the affiliate program.
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <a href="####" style="text-decoration: none; font-weight: 500;color: #6a54e7; ">Read the full
+                            story</a>
+                    </div>
+                </div>
+                <div class="r11r2c3"
+                    style="border: 1px solid rgb(157, 171, 233); height: 370px; width: 300px; padding: 30px; border-radius: 20px;">
+                    <div class="header" style="display: flex;">
+                        <div><img src="./asset/r11r2c3.avif" alt="" style="height: 70px; width: 70px;"></div>
+                        <div style="margin-top: -30px; margin-left: 20px; font-size: 17px;">
+                            <h4 style="margin-bottom: -8px;">Charlie Low</h4>
+                            <p>Co-founder of Nohma</p>
+                        </div>
+                    </div>
+                    <div class="body" style="margin-top: 68px; margin-bottom: 58px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="color11">
+                            Ever since we've been with Hostinger, it's been amazing. We've not really had any issues at
+                            all and if we ever do have a question, their customer service is incredible.
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <a href="####" style="text-decoration: none; font-weight: 500; color: #6a54e7;">Read the full
+                            story</a>
+                    </div>
+                </div>
+            </div>
+            <div class="r11r3" style="padding-top: 35px; text-align: center;">
+                <button class="btn11"
+                    style="height: 42px; width: 220px; border: 2px solid #6a54e7;border-radius: 10px; font-size: 18px; color: #6a54e7; ">Read
+                    more stories</button>
+            </div>
+        </div>
+        <div class="row12" style="padding: 160px; display: flex;">
+            <div class="r12c1" style="height: 300px; width: 480px; padding: 30px;">
+                <h1 style="padding-left: 40px;">Here to help 24/7</h1>
+                <ul style="list-style: none;">
+                    <li><i class="fa-solid fa-check" style="color: rgb(57, 214, 57);"></i>Access expert support whenever
+                        you need it via live chat and email</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(57, 214, 57);"></i>Our specialists are fluent in
+                        10+ languages so you can be sure communication will be smooth</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(57, 214, 57);"></i>Spend less time waiting, our
+                        speedy support team typically responds in under 2 minutes</li>
+                </ul>
+            </div>
+            <div class="r12c2">
+                <img src="./asset/r12c2.avif" height="500px" width="550px" alt=""
+                    style="padding-left: 60px; margin-top: -60px;">
+            </div>
+        </div>
+        <div class="row13" style="background-color: #2d1b69; color: white;">
+            <div class="r13r1" style="text-align: center; padding: 50px;">
+                <h1 style="font-size: 38px;">Save up to 75% on your plan + get a free <br> domain</h1>
+                <p>Try risk-free. 30-day money-back guarantee.</p>
+            </div>
+            <div class="r13r2" style="text-align: center;">
+                <button
+                    style="border: none; border-radius: 8px; background: rgb(219, 58, 112); height: 45px;
+                width: 190px; font-size: 20px; color: white; margin-left: auto; margin-right: auto; margin-bottom: 80px;">Get
+                    started</button>
+            </div>
+        </div>
+        <div class="row14" style="display: flex; justify-content: center; padding-top: 50px;">
+            <div class="r14c1">
+                <h4 style="margin-left: 40px; font-size: 19px; ">HOSTING</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#">Web hosting</a></li>
+                    <li><a href="#">WordPress Hosting</a></li>
+                    <li><a href="#">VPS hosting</a></li>
+                    <li><a href="#">Business email</a></li>
+                    <li><a href="#">Cloud hosting</a></li>
+                    <li><a href="#">WooCommerce hosting</a></li>
+                    <li><a href="#">Hosting for agencies</a></li>
+                    <li><a href="#">Minecraft hosting</a></li>
+                    <li><a href="#">Game server hosting</a></li>
+                    <li><a href="#">Google Workspace</a></li>
+                </ul>
+            </div>
+            <div class="r14c2">
+                <h4 style="margin-left: 40px; font-size: 19px; ">DOMAIN</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#">Domains</a></li>
+                    <li><a href="#">Cheap domains</a></li>
+                    <li><a href="#">Free Domain Name</a></li>
+                    <li><a href="#">WHOIS Lookup</a></li>
+                    <li><a href="#">Free SSL certificate</a></li>
+                    <li><a href="#">Domain transfer</a></li>
+                    <li><a href="#">Domain Extensions</a></li>
+                </ul>
+            </div>
+            <div class="r14c3">
+                <h4 style="margin-left: 40px; font-size: 19px; ">TOOLS</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#" style="padding-right: 5px;">Horizons</a><span
+                            style="height: 5px; width: 5px; font-size: 11px; padding: 5px; background-color: rgb(238, 251, 238); color: rgb(42, 176, 42);font-weight: 600;">NEW</span>
+                    </li>
+                    <li><a href="#">Website Builder</a></li>
+                    <li><a href="#">AI Website Builder</a></li>
+                    <li><a href="#">eCommerce Website Builder</a></li>
+                    <li><a href="#">Business Name Generator</a></li>
+                    <li><a href="#">AI Logo Generator</a></li>
+                    <li><a href="#">Migrate to Hostinger</a></li>
+                </ul>
+            </div>
+            <div class="r14c4">
+                <h4 style="margin-left: 40px; font-size: 19px; ">INFORMATION</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Hostinger Reviews</a></li>
+                    <li><a href="#">Affiliate program</a></li>
+                    <li><a href="#">Referral program</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">System status</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="r14c5">
+                <h4 style="margin-left: 40px; font-size: 19px; ">COMPANY</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#">About Hostinger</a></li>
+                    <li><a href="#">Our technology</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+            </div>
+            <div class="r14c6">
+                <h4 style="margin-left: 40px; font-size: 19px; ">SUPPORT</h4>
+                <ul style="list-style: none; margin-top: -20px; ">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Contract us</a></li>
+                    <li><a href="#">Report Online Abuse</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row15">
+            <div class="r15r1" style="margin-left: 225px;">
+                <div class="r15r1c1" style="margin-bottom: -20px;">
+                    <img src="./asset/hostingerlogo.png" alt="" style="height: 105px; width: 150px;">
+                </div>
+                <div class="r15r2c1" style="display: flex;flex-wrap: wrap; gap: 8px; margin-bottom: 24px; ">
+                    <img src="./asset/visa.avif" alt="" style="border: 1px solid rgb(196, 196, 234); border-radius: 10px
+                    ; height: 40px; width: 60px;">
+                    <img src="./asset/mastercard.avif" alt=""  style="border: 1px solid rgb(196, 196, 234); border-radius: 10px
+                    ; height: 40px; width: 60px;">
+                    <img src="./asset/discover.avif" alt="" style="border: 1px solid rgb(196, 196, 234); border-radius: 10px
+                    ; height: 40px; width: 60px;">
+                    <img src="./asset/dinner-club.avif" alt="" style="border: 1px solid rgb(196, 196, 234); border-radius: 10px
+                    ; height: 40px; width: 60px;">
+                    <img src="./asset/rupay.avif" alt="" style="border: 1px solid rgb(196, 196, 234); border-radius: 10px
+                    ; height: 40px; width: 60px;">
+                    <a href="#" style="text-decoration: none; padding-top: 10px; font-weight: 500; color: #5a40f1;">and more</a>
+                </div>
+                <div class="r15r1c2">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

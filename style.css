@@ -1,0 +1,9 @@
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+
+    }
+    .row1{
+        background-color: aqua;    }
+    
+  }
